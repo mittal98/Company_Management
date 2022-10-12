@@ -8,18 +8,12 @@ const routes: Routes = [{
 
 
   children: [
-    {
-      path: '',
-      component: CompanyComponent
-    },
+
     {
       path: 'add',
       component: CompanyFormComponent
-    },
-    {
-      path: 'edit/:id',
-      component: CompanyFormComponent
     }
+   
   ]
 
 }];
