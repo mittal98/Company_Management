@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-company-form',
   templateUrl: './company-form.component.html',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompanyFormComponent implements OnInit {
 
-  constructor() { }
+  constructor( ) {}
+    
+   
 
   ngOnInit(): void {
   }
