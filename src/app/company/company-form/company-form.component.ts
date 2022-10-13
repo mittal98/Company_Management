@@ -21,12 +21,12 @@ export class CompanyFormComponent implements OnInit {
   constructor(private breadcrumbService: BreadcrumbService,
     private activatedRoute: ActivatedRoute,
     private formBuilder: FormBuilder) {
-      if (this.activatedRoute.snapshot.params['company_id']) {
-        this.breadcrumbService.set("@Edit", 'Company Name')
-      }
-      else {
-        this.breadcrumbService.set("@Add", 'Company List')
-      }
+    if (this.activatedRoute.snapshot.params['company_id']) {
+      this.breadcrumbService.set("@Edit", 'Company Name')
+    }
+    else {
+      this.breadcrumbService.set("@Add", 'Company List')
+    }
     this.companyForm = new FormGroup('');
   }
 
@@ -47,5 +47,9 @@ export class CompanyFormComponent implements OnInit {
   }
   get FormControls(): { [key: string]: AbstractControl } {
     return this.companyForm.controls
+  }
+
+  public onSave(): void {
+    this.isSubmitted = true;
   }
 }

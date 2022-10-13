@@ -1,4 +1,4 @@
-export class Company{
+export class company{
     id!:number;
     companyName?:string;
     companyDescription?:string;

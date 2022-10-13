@@ -1,11 +1,12 @@
 {
-    "companyDetails": [
-        {
-            "id": 1,
-            "companyName": "1Rivet",
-            "companyDescription": "IT Company",
-            "companyTag": " ",
-            "companyLogo": " "
-        }
-    ]
+  "companyData": [
+    {
+      "id": 1,
+      "companyName": "1Rivet"
+    },
+    {
+      "id": 2,
+      "companyName": "1Rivet"
+    }
+  ]
 }
