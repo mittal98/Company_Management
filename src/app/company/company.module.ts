@@ -6,9 +6,9 @@ import { CompanyFormComponent } from './company-form/company-form.component';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { BreadcrumbModule } from "xng-breadcrumb"
 
-
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NgSelectModule  } from "@ng-select/ng-select";
+import { NgSelectModule } from "@ng-select/ng-select";
 
 
 @NgModule({
@@ -22,6 +22,7 @@ import { NgSelectModule  } from "@ng-select/ng-select";
     CompanyRoutingModule,
     BreadcrumbModule,
     ReactiveFormsModule,
+    HttpClientModule,
     NgSelectModule
   ]
 })
