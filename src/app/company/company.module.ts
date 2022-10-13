@@ -7,6 +7,8 @@ import { CompanyListComponent } from './company-list/company-list.component';
 import { BreadcrumbModule } from "xng-breadcrumb"
 
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgSelectModule  } from "@ng-select/ng-select";
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { BreadcrumbModule } from "xng-breadcrumb"
   imports: [
     CommonModule,
     CompanyRoutingModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    ReactiveFormsModule,
+    NgSelectModule
   ]
 })
 export class CompanyModule { }

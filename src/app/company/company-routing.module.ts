@@ -8,10 +8,15 @@ const routes: Routes = [{
 
 
   children: [
+    {
+      path:'',
+      pathMatch:'full',
+      redirectTo:'add'
+    },
 
     {
       path: 'add',
-      component: CompanyFormComponent,
+      component: CompanyFormComponent,  
       data: { breadcrumb: {alias: 'Add'}},
     },
     {
