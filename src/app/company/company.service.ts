@@ -22,6 +22,15 @@ export class CompanyService {
   
   addCompany(companydata: company): Observable<any> {
     const url: string = this.baseUrl ;
-    return this.http.post(url, companydata)
+    return this.http.post<company>(url, companydata)
+  }
+  getCompanyById(id: number): Observable<any> {
+    const url: string = this.baseUrl  + id;
+    return this.http.get<company>(url)
+  }
+
+  updateCompany(companydata: company, id: number): Observable<any> {
+    const url: string = this.baseUrl + id;
+    return this.http.put<company>(url, companydata)
   }
 }
