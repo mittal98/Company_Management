@@ -6,7 +6,7 @@ import { CompanyFormComponent } from './company-form/company-form.component';
 import { CompanyListComponent } from './company-list/company-list.component';
 import { BreadcrumbModule } from "xng-breadcrumb"
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from "@ng-select/ng-select";
 import { CompanyService } from './company.service';
 import { SharedModule } from '../shared/shared.module';
@@ -25,7 +25,8 @@ import { SharedModule } from '../shared/shared.module';
     ReactiveFormsModule,
     HttpClientModule,
     NgSelectModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [
     CompanyService

@@ -10,10 +10,12 @@ import { CompanyService } from '../company.service';
 })
 export class CompanyListComponent implements OnInit {
   public companyData: company[]
+  public searchInput:string;
   constructor(private companyService: CompanyService,
     private router: Router
   ) {
     this.companyData = [];
+    this.searchInput="";
   }
 
   ngOnInit(): void {
@@ -26,12 +28,20 @@ export class CompanyListComponent implements OnInit {
   }
 
   onDelete(id: any) {
-    if (confirm('Are you sure to delete this company?'))
+    if (confirm('Are you sure want to delete this company?'))
       this.companyService.deleteCompany(id).subscribe((result) => {
         this.getCompanyData();
       })
   }
- 
+  searchData(){
+      const search = this.searchInput.toLowerCase();
+      if(search!=''){
+        this.companyData = this.companyData.filter((item)=>{
+          return item.companyName.toLowerCase().includes(search);
+        })
+      }
+      this.getCompanyData();
+    }
   
 }
 

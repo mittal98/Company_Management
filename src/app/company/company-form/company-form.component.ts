@@ -29,8 +29,10 @@ export class CompanyFormComponent implements OnInit {
     private router: Router) {
 
     this.data = [];
-    this.companyid = ''
-    if (this.activatedRoute.snapshot.params['id']) {
+    this.companyid = '';
+
+
+    if (this.companyid) {
       this.breadcrumbService.set("@Edit", 'Edit Company')
     }
     else {
