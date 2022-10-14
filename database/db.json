@@ -2,11 +2,41 @@
   "companyData": [
     {
       "id": 1,
-      "companyName": "1Rivet"
+      "logo": 1,
+      "companyName": "1 Rivet"
     },
     {
       "id": 2,
-      "companyName": "1Rivet"
+      "logo": 1,
+      "companyName": "1 Rivet"
+    },
+    {
+      "id": 4,
+      "companyName": "lll mmmm ",
+      "CompanyDescription": "efewfewg",
+      "SelectTag": [
+        {
+          "id": "2",
+          "text": "two"
+        }
+      ],
+      "SelectLogo": "jhlhukukththuy"
+    },
+    {
+      "id": 5,
+      "companyName": "mittal pateldfdf",
+      "CompanyDescription": "thtrhtsads",
+      "SelectTag": [
+        {
+          "id": "2",
+          "text": "two"
+        },
+        {
+          "id": "3",
+          "text": "three"
+        }
+      ],
+      "SelectLogo": "jhlhukukththuy"
     }
   ]
 }

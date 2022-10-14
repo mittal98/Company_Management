@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { company } from '../company.model';
 import { CompanyService } from '../company.service';
 
@@ -9,7 +10,9 @@ import { CompanyService } from '../company.service';
 })
 export class CompanyListComponent implements OnInit {
   public companyData: company[]
-  constructor(private companyService: CompanyService) {
+  constructor(private companyService: CompanyService,
+    private router: Router
+  ) {
     this.companyData = [];
   }
 
@@ -19,12 +22,16 @@ export class CompanyListComponent implements OnInit {
   getCompanyData() {
     this.companyService.getCompany().subscribe(data => {
       this.companyData = data
-     
     })
   }
+
   onDelete(id: any) {
-    this.companyService.deleteCompany(id).subscribe((result) => {
-      this.getCompanyData();
-    })
+    if (confirm('Are you sure to delete this company?'))
+      this.companyService.deleteCompany(id).subscribe((result) => {
+        this.getCompanyData();
+      })
   }
+ 
+  
 }
+

@@ -20,7 +20,7 @@ const routes: Routes = [{
       data: { breadcrumb: {alias: 'Add'}},
     },
     {
-      path:'edit/:company_id',
+      path:'edit/:id',
       component:CompanyFormComponent,
       data: { breadcrumb: {alias: 'Edit'}},
     }
