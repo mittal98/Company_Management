@@ -8,12 +8,14 @@
 @import "assets/scss/utilities/index";
 @import "assets/scss/vendor/index";
 @import "~@ng-select/ng-select/themes/default.theme.css";
+
 // Global styles goes here
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     height: 100%;
@@ -21,4 +23,5 @@ body {
 }
 
 body {
-    font-family: "Poppins", sans-serif}
+    font-family: "Poppins", sans-serif
+}

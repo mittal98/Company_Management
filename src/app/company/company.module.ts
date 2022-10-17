@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from "@ng-select/ng-select";
 import { CompanyService } from './company.service';
 import { SharedModule } from '../shared/shared.module';
+import { SubjectService } from './subject.service';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SharedModule } from '../shared/shared.module';
     FormsModule
   ],
   providers: [
-    CompanyService
+    CompanyService,
+    SubjectService
   ]
 })
 export class CompanyModule { }
