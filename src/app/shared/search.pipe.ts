@@ -2,19 +2,20 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { company } from '../company/company.model';
 
 @Pipe({
+  // pipename
   name: 'search'
 })
 export class SearchPipe implements PipeTransform {
 
   transform(data: company[], searchItem: string): any {
 
-    if (!data) return null;
+    if (!data) return [];
     if (!searchItem) return data;
 
     searchItem = searchItem.toLowerCase();
 
     return data.filter((item: any) => {
-      return JSON.stringify(item).toLowerCase().includes(searchItem);
+      return item.companyName.toLowerCase().includes(searchItem);
     });
   }
 

@@ -2,23 +2,26 @@
 
 //Add bootstrap icon css file
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+// add base file
 @import "assets/scss/base/index";
-@import "assets/scss/components/index";
-@import "assets/scss/layout/index";
-@import "assets/scss/utilities/index";
+// add vendor file
 @import "assets/scss/vendor/index";
+// add ngselect css file
 @import "~@ng-select/ng-select/themes/default.theme.css";
+
 // Global styles goes here
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     height: 100%;
     width: 100%;
 }
-
+// font-family
 body {
-    font-family: "Poppins", sans-serif}
+    font-family: "Poppins", sans-serif
+}
