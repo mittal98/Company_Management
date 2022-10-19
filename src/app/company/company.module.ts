@@ -4,7 +4,7 @@ import { CompanyRoutingModule } from './company-routing.module';
 import { CompanyComponent } from './company.component';
 import { CompanyFormComponent } from './company-form/company-form.component';
 import { CompanyListComponent } from './company-list/company-list.component';
-import { BreadcrumbModule } from "xng-breadcrumb"
+import { BreadcrumbModule, BreadcrumbService } from "xng-breadcrumb"
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from "@ng-select/ng-select";
@@ -31,7 +31,7 @@ import { SubjectService } from './subject.service';
   ],
   providers: [
     CompanyService,
-    SubjectService,
+
     
   ]
 })

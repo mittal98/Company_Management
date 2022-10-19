@@ -41,12 +41,6 @@ export class CompanyFormComponent implements OnInit {
     if (this.companyid) {
       this.breadcrumbService.set("@edit", 'EDIT');
 
-    }
-    else {
-      this.breadcrumbService.set("@Add", 'ADD');
-
-    }
-
     // this.activatedRoute.params.subscribe((params) => {
     //   this.companyid = params['id'];
     //   if (this.companyid) {
@@ -79,7 +73,7 @@ export class CompanyFormComponent implements OnInit {
   get FormControls(): { [key: string]: AbstractControl } {
     return this.companyForm.controls
   }
-  // save
+
   onSave() {
     this.isSubmitted = true;
     if (this.companyid) {
@@ -89,7 +83,8 @@ export class CompanyFormComponent implements OnInit {
     }
 
   }
-  // add
+
+
   addCompany() {
     this.companyService.addCompany(this.companyForm.value).subscribe((data: company) => {
       this.subjectService.getCompany(data);
@@ -99,13 +94,7 @@ export class CompanyFormComponent implements OnInit {
   public onCancel() {
     this.companyForm.reset();
   }
-  // // getbyid
-  //   getCompanyById() {
-  //     this.companyService.getCompanyById(Number(this.companyid)).subscribe((Response: company) => {
-  //       this.companyForm.patchValue(Response);
 
-  //     })
-  //   }
   // update
   updateCompany() {
     this.companyService.updateCompany(this.companyForm.value, this.companyid).subscribe(res => {

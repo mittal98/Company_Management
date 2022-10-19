@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { EditResolver } from './edit.resolver';
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent
@@ -13,15 +14,11 @@ import { EditResolver } from './edit.resolver';
   imports: [
     CommonModule,
     BreadcrumbModule,
-    RouterModule,
 
   ],
   exports: [
     HeaderComponent
   ],
-  providers:[
-   
-    EditResolver
-  ]
+
 })
 export class CoreModule { }

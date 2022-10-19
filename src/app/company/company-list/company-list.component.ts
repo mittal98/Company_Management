@@ -41,7 +41,6 @@ export class CompanyListComponent implements OnInit {
         this.getCompanyData();
       })
   }
-  
 
 }
 

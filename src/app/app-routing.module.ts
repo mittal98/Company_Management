@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: 'company',
      loadChildren: () => import('./company/company.module').then(m => m.CompanyModule),
-    data: { breadcrumb: { alias: 'Company' } }
+  
   }];
 
 @NgModule({
