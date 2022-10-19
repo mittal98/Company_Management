@@ -16,54 +16,14 @@
         }
       ],
       "SelectLogo": "efef"
-    },
-    {
-      "id": 3,
-      "companyName": "minal patel",
-      "CompanyDescription": "sdad",
+
       "SelectTag": [
         {
           "id": "2",
           "text": "two"
         }
       ],
-      "SelectLogo": "eefew"
-    },
-    {
-      "id": 4,
-      "companyName": "miral patel...",
-      "CompanyDescription": "fewfew",
-      "SelectTag": [
-        {
-          "id": "2",
-          "text": "two"
-        }
-      ],
-      "SelectLogo": "edfe"
-    },
-    {
-      "id": 5,
-      "companyName": "kinjal patel",
-      "CompanyDescription": "dvds",
-      "SelectTag": [
-        {
-          "id": "3",
-          "text": "three"
-        }
-      ],
-      "SelectLogo": "ewfwef"
-    },
-    {
-      "id": 6,
-      "companyName": "binal patel",
-      "CompanyDescription": "fewdfa",
-      "SelectTag": [
-        {
-          "id": "3",
-          "text": "three"
-        }
-      ],
-      "SelectLogo": "dwqdwqdwqwdq"
+
     }
   ]
 }

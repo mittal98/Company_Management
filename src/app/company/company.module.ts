@@ -31,7 +31,7 @@ import { SubjectService } from './subject.service';
   ],
   providers: [
     CompanyService,
-    SubjectService
+
     
   ]
 })

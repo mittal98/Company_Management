@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditResolver } from '../core/edit.resolver';
 import { CompanyFormComponent } from './company-form/company-form.component';
 import { CompanyComponent } from './company.component';
 
@@ -22,7 +23,7 @@ const routes: Routes = [{
     {
       path:'edit/:id',
       component:CompanyFormComponent,
-     
+
     }
    
   ]
@@ -31,6 +32,7 @@ const routes: Routes = [{
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [EditResolver]
 })
 export class CompanyRoutingModule { }
