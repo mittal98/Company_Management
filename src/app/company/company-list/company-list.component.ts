@@ -41,16 +41,7 @@ export class CompanyListComponent implements OnInit {
         this.getCompanyData();
       })
   }
-  // filter
-  searchData() {
-    const search = this.searchInput.toLowerCase();
-    if (search != '') {
-      this.companyData = this.companyData.filter((item) => {
-        return item.companyName.toLowerCase().includes(search);
-      })
-    }
-    this.getCompanyData();
-  }
+ 
 
 }
 

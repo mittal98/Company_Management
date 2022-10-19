@@ -9,14 +9,11 @@ export class SearchPipe implements PipeTransform {
 
   transform(data: company[], searchItem: string): any {
 
-    if (!data) return [];
-    if (!searchItem) return data;
-
-    searchItem = searchItem.toLowerCase();
-
+    if (!searchItem) {
+      return data
+    }
     return data.filter((item: any) => {
-      return item.companyName.toLowerCase().includes(searchItem);
+      return item.companyName.toLowerCase().indexOf((searchItem.toLowerCase()))>-1
     });
   }
-
 }

@@ -39,11 +39,11 @@ export class CompanyFormComponent implements OnInit {
 
 
     if (this.companyid) {
-      this.breadcrumbService.set("@edit", this.companyName);
+      this.breadcrumbService.set("@edit", 'EDIT');
      
     }
     else {
-      this.breadcrumbService.set("@Add", 'Company List');
+      this.breadcrumbService.set("@Add", 'ADD');
      
     }
 
@@ -98,7 +98,7 @@ export class CompanyFormComponent implements OnInit {
   getCompanyById() {
     this.companyService.getCompanyById(Number(this.companyid)).subscribe((Response: company) => {
       this.companyForm.patchValue(Response);
-      this.companyName = Response.companyName;
+     
     })
   }
   // update
