@@ -1,6 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
+  // pipename
   name: 'nameLogo'
 })
 export class NameLogoPipe implements PipeTransform {
