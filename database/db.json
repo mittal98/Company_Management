@@ -7,20 +7,75 @@
     },
     {
       "id": 2,
-      "logo": 1,
-      "companyName": "1 Rivet"
+      "companyName": "mittal patel",
+      "CompanyDescription": "efef",
+      "SelectTag": [
+        {
+          "id": "3",
+          "text": "three"
+        }
+      ],
+      "SelectLogo": "efef"
     },
     {
-      "id": 5,
-      "companyName": "wd sddsgg5",
-      "CompanyDescription": "vsdwa",
+      "id": 3,
+      "companyName": "minal patel",
+      "CompanyDescription": "sdad",
       "SelectTag": [
         {
           "id": "2",
           "text": "two"
         }
       ],
-      "SelectLogo": "wwq"
+      "SelectLogo": "eefew"
+    },
+    {
+      "id": 4,
+      "companyName": "miral patel...",
+      "CompanyDescription": "fewfew",
+      "SelectTag": [
+        {
+          "id": "2",
+          "text": "two"
+        }
+      ],
+      "SelectLogo": "edfe"
+    },
+    {
+      "id": 5,
+      "companyName": "kinjal patel",
+      "CompanyDescription": "dvds",
+      "SelectTag": [
+        {
+          "id": "3",
+          "text": "three"
+        }
+      ],
+      "SelectLogo": "ewfwef"
+    },
+    {
+      "id": 6,
+      "companyName": "kiral patel.",
+      "CompanyDescription": "fewdfawd",
+      "SelectTag": [
+        {
+          "id": "3",
+          "text": "three"
+        }
+      ],
+      "SelectLogo": "dwqdwqdwqwdq"
+    },
+    {
+      "id": 7,
+      "companyName": "ddsg fdfd",
+      "CompanyDescription": "fhref",
+      "SelectTag": [
+        {
+          "id": "2",
+          "text": "two"
+        }
+      ],
+      "SelectLogo": "fdf"
     }
   ]
 }
