@@ -40,13 +40,8 @@ export class CompanyFormComponent implements OnInit {
 
     if (this.companyid) {
       this.breadcrumbService.set("@edit", 'EDIT');
+    }
 
-    // this.activatedRoute.params.subscribe((params) => {
-    //   this.companyid = params['id'];
-    //   if (this.companyid) {
-    //     this.getCompanyById()
-    //   }
-    // })
   }
 
   ngOnInit(): void {

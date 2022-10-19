@@ -1,29 +1,100 @@
 {
   "companyData": [
     {
-      "id": 1,
-      "logo": 1,
-      "companyName": "1 Rivet"
-    },
-    {
-      "id": 2,
-      "companyName": "mittal patel",
-      "CompanyDescription": "efef",
-      "SelectTag": [
-        {
-          "id": "3",
-          "text": "three"
-        }
-      ],
-      "SelectLogo": "efef"
-
+      "id": 3,
+      "companyName": "minal pate",
+      "CompanyDescription": "sdad",
       "SelectTag": [
         {
           "id": "2",
           "text": "two"
         }
       ],
-
+      "SelectLogo": "eefew"
+    },
+    {
+      "id": 4,
+      "companyName": "miral patel...",
+      "CompanyDescription": "fewfew",
+      "SelectTag": [
+        {
+          "id": "2",
+          "text": "two"
+        }
+      ],
+      "SelectLogo": "edfe"
+    },
+    {
+      "id": 5,
+      "companyName": "kinjal patel",
+      "CompanyDescription": "dvds",
+      "SelectTag": [
+        {
+          "id": "3",
+          "text": "three"
+        }
+      ],
+      "SelectLogo": "ewfwef"
+    },
+    {
+      "id": 6,
+      "companyName": "kiral patel",
+      "CompanyDescription": "fewdfawd",
+      "SelectTag": [
+        {
+          "id": "3",
+          "text": "three"
+        }
+      ],
+      "SelectLogo": "dwqdwqdwqwdq"
+    },
+    {
+      "id": 7,
+      "companyName": "ddsg fdfdmkk",
+      "CompanyDescription": "fhref",
+      "SelectTag": [
+        {
+          "id": "2",
+          "text": "two"
+        }
+      ],
+      "SelectLogo": "fdf"
+    },
+    {
+      "id": 8,
+      "companyName": "bbn bkjbjk",
+      "CompanyDescription": "efe",
+      "SelectTag": [
+        {
+          "id": "4",
+          "text": "four"
+        }
+      ],
+      "SelectLogo": "jhlhukukththuy"
+    },
+    {
+      "id": 9,
+      "companyName": "sa vsff",
+      "CompanyDescription": "dfe",
+      "SelectTag": [
+        {
+          "id": "4",
+          "text": "four"
+        }
+      ],
+      "SelectLogo": "jhlhukukththuy"
+    },
+    {
+      "id": 11,
+      "companyName": "fewg fbfb",
+      "CompanyDescription": "rgwerg",
+      "SelectTag": [
+        {
+          "id": "3",
+          "text": "three"
+        }
+      ],
+      "SelectLogo": "gr"
     }
   ]
 }

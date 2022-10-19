@@ -23,6 +23,7 @@ const routes: Routes = [{
     {
       path:'edit/:id',
       component:CompanyFormComponent,
+      resolve: { data: EditResolver }
 
     }
    
