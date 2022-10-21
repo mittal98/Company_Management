@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { company } from '../company.model';
 import { CompanyService } from '../company.service';
 import { SubjectService } from "../subject.service";
+import { BreadcrumbService } from "src/app/company/breadcrumb.service";
 
 @Component({
   selector: 'app-company-list',
@@ -11,13 +12,14 @@ import { SubjectService } from "../subject.service";
 })
 export class CompanyListComponent implements OnInit {
   public companyData: company[]
-  public searchInput: string;
+  public searchitem: string;
   constructor(private companyService: CompanyService,
     private router: Router,
-    private subjectService: SubjectService
+    private subjectService: SubjectService,
+    private breadcrumbService: BreadcrumbService
   ) {
     this.companyData = [];
-    this.searchInput = "";
+    this.searchitem = "";
   }
 
   ngOnInit(): void {
@@ -34,12 +36,22 @@ export class CompanyListComponent implements OnInit {
       this.companyData = data
     })
   }
-// delete
+  // delete
   onDelete(id: any) {
     if (confirm('Are you sure want to delete this company?'))
       this.companyService.deleteCompany(id).subscribe((result) => {
         this.getCompanyData();
       })
+  }
+
+  // BreadCrumb 
+  public redirectAdd(): void {
+    this.breadcrumbService.setData(0, 'add');
+  }
+
+  public editComapny(company: company): void {
+    this.breadcrumbService.setData(company.id,company.companyName);
+    this.router.navigate(['company/edit', company.id]);
   }
 
 }

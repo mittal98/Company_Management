@@ -2,7 +2,7 @@
   "companyData": [
     {
       "id": 3,
-      "companyName": "minal pate",
+      "companyName": "minal pate..",
       "CompanyDescription": "sdad",
       "SelectTag": [
         {
@@ -26,7 +26,7 @@
     },
     {
       "id": 5,
-      "companyName": "kinjal patel",
+      "companyName": "kinjal patel...",
       "CompanyDescription": "dvds",
       "SelectTag": [
         {
@@ -50,51 +50,15 @@
     },
     {
       "id": 7,
-      "companyName": "ddsg fdfdmkk",
-      "CompanyDescription": "fhref",
+      "companyName": "mittal patel",
+      "CompanyDescription": "dferf",
       "SelectTag": [
         {
           "id": "2",
           "text": "two"
         }
       ],
-      "SelectLogo": "fdf"
-    },
-    {
-      "id": 8,
-      "companyName": "bbn bkjbjk",
-      "CompanyDescription": "efe",
-      "SelectTag": [
-        {
-          "id": "4",
-          "text": "four"
-        }
-      ],
-      "SelectLogo": "jhlhukukththuy"
-    },
-    {
-      "id": 9,
-      "companyName": "sa vsff",
-      "CompanyDescription": "dfe",
-      "SelectTag": [
-        {
-          "id": "4",
-          "text": "four"
-        }
-      ],
-      "SelectLogo": "jhlhukukththuy"
-    },
-    {
-      "id": 11,
-      "companyName": "fewg fbfb",
-      "CompanyDescription": "rgwerg",
-      "SelectTag": [
-        {
-          "id": "3",
-          "text": "three"
-        }
-      ],
-      "SelectLogo": "gr"
+      "SelectLogo": "jhlhukukthth"
     }
   ]
 }
