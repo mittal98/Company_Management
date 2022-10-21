@@ -6,7 +6,7 @@
         <div>
             <!-- company name -->
             <div>
-                <input class="form-control mb-4 shadow-sm" type="text" placeholder="Company Name"
+                <input class="form-control mb-4 shadow-sm bg-light" type="text" placeholder="Company Name"
                     formControlName="companyName"
                     [ngClass]="{'is-invalid':FormControls['companyName'].invalid && (isSubmitted || FormControls['companyName'].touched || FormControls['companyName'].dirty),
             'is-valid':FormControls['companyName'].valid && (isSubmitted || FormControls['companyName'].touched || FormControls['companyName'].dirty)}">
@@ -20,7 +20,7 @@
             </div>
             <!-- company description -->
             <div>
-                <textarea class="form-control mb-4 shadow-sm" placeholder="Company Description" id="floatingTextarea2"
+                <textarea class="form-control mb-4 shadow-sm bg-light" placeholder="Company Description" id="floatingTextarea2"
                     style="height: 100px" formControlName="CompanyDescription"
                     [ngClass]="{'is-invalid':FormControls['CompanyDescription'].invalid && (isSubmitted || FormControls['CompanyDescription'].touched || FormControls['CompanyDescription'].dirty),
             'is-valid':FormControls['CompanyDescription'].valid && (isSubmitted || FormControls['CompanyDescription'].touched || FormControls['CompanyDescription'].dirty)}"></textarea>
@@ -35,7 +35,7 @@
             <!-- ng-select -->
             <div>
                 <div>
-                    <ng-select class="mb-4 shadow-sm" [items]="list" bindLabel="text" placeholder="Select Tag"
+                    <ng-select class="mb-4 shadow-sm bg-light" [items]="list" bindLabel="text" placeholder="Select Tag"
                         appendTo="body" [multiple]="true" formControlName="SelectTag">
                     </ng-select>
                 </div>
@@ -49,7 +49,7 @@
             </div>
             <!-- select logo -->
             <div class="input-group mb-4 shadow-sm">
-                <input type="text" class="form-control" id="inputGroupFile02" placeholder="Select Logo "
+                <input type="text" class="form-control bg-light" id="inputGroupFile02" placeholder="Select Logo "
                     formControlName="SelectLogo">
                 <button type="button" class="input-group-text">Browse</button>
             </div>

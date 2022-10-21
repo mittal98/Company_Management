@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { BreadcrumbService } from 'xng-breadcrumb';
 import { company } from '../company.model';
 import { CompanyService } from '../company.service';
 import { SubjectService } from "..//subject.service";
@@ -24,28 +23,20 @@ export class CompanyFormComponent implements OnInit {
   public companyForm: FormGroup;
   public isSubmitted: boolean = false;
   public companyid: any;
-  private companyName: string = "";
   public data: company[];
   public title: string = "";
-  constructor(private breadcrumbService: BreadcrumbService,
+  constructor(
     private activatedRoute: ActivatedRoute,
     private formBuilder: FormBuilder,
     private companyService: CompanyService,
     private subjectService: SubjectService) {
-
     this.data = [];
     this.companyid = '';
     this.companyForm = new FormGroup('');
-
-
-    if (this.companyid) {
-      this.breadcrumbService.set("@edit", 'EDIT');
-    }
-
   }
 
   ngOnInit(): void {
-    this.title = this.companyid ? 'Edit' : 'Add';
+
     this.companyForm = this.formBuilder.group(
       {
         id: [''],
@@ -61,8 +52,9 @@ export class CompanyFormComponent implements OnInit {
     //edit Data
     this.activatedRoute.data.subscribe((response) => {
       this.companyForm.patchValue(response['data']);
+      this.companyid = response['data']?.id
     });
-
+    this.title = this.companyid ? 'Edit' : 'Add';
   }
   // formcontrol
   get FormControls(): { [key: string]: AbstractControl } {

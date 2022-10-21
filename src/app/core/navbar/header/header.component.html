@@ -4,10 +4,12 @@
             <div class="  ms-3 ">
                 <span class="bi bi-list text-black fs-4 me-3"></span>
             </div>
-            <div>
-                <span class="nav-text text-black ms-3">COMPANY</span>
-                <!-- breadcrumb -->
-                <xng-breadcrumb class="ms-3"></xng-breadcrumb>
+            <div class="mx-4 brand">
+                <p class="m-0 fs-4">Company</p>
+                <span class="breadcrumb">
+                    <a class="breadcrumb-item text-black me-2" routerLink="company">Company/</a>
+                    <span class="breadcrumb-item text-black">{{data?.name}}</span>
+                </span>
             </div>
         </div>
     </div>

@@ -1,11 +1,12 @@
 <!-- company list -->
 <div class="h-100">
-    <div class="d-flex justify-content-between w-100 mt-4">
+    <div class="d-flex justify-content-between w-100 ">
         <h4>Company</h4>
-        <button type="button" class="btn btn-outline-success rounded-circle" routerLink="add" > +</button>
+        <button type="button" class="btn btn-outline-success rounded-circle" routerLink="add" (click)='redirectAdd()'>
+            +</button>
     </div>
     <div class="d-flex w-100 mt-3" role="search">
-        <input class="form-control border shadow-sm w-100" type="search" placeholder="Search" [(ngModel)]="searchInput">
+        <input class="form-control border shadow-sm w-100 bg-light" type="search" placeholder="Search" [(ngModel)]="searchitem">
     </div>
     <div class=" mt-4 d-flex justify-content-between">
         <table class="table w-100 ">
@@ -16,8 +17,8 @@
                     <th scope="col">Close</th>
                 </tr>
             </thead>
-            <tbody *ngIf ="companyData | search:searchInput as filterdata">
-                <tr *ngFor="let item of filterdata  " [routerLink]="['edit/'+item.id]">
+            <tbody *ngIf="companyData | search:searchitem as filterdata">
+                <tr *ngFor="let item of filterdata  " [routerLink]="['edit/'+item.id]" (click)="editComapny(item)">
                     <td>
                         <div>
                             <a class="  ms-1  text-decoration-none">
@@ -33,7 +34,9 @@
                             (click)="onDelete(item.id)"></button>
                     </td>
                 </tr>
-                <div *ngIf ="filterdata.length===0">No Data Found</div>
+               
+                    <div *ngIf="filterdata.length===0 " class="text-center">No Data Found</div>
+                
             </tbody>
         </table>
     </div>

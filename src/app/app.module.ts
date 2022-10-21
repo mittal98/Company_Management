@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { BreadcrumbService } from 'xng-breadcrumb';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { BreadcrumbService } from 'xng-breadcrumb';
     AppRoutingModule,
     CoreModule
   ],
-  providers: [BreadcrumbService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
